@@ -6,22 +6,32 @@ Import Open Sans font
 ****************************/
 @font-face {
     font-family: 'Open Sans';
-    src: url('../fonts/opensans_regular/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
-        url('../fonts/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
-        url('../fonts/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('../fonts/opensans_bold/OpenSans-Bold-webfont.eot');
-    src: url('../fonts/opensans_bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/opensans_bold/OpenSans-Bold-webfont.woff') format('woff'),
-        url('../fonts/opensans_bold/OpenSans-Bold-webfont.ttf') format('truetype'),
-        url('../fonts/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.svg#open_sansbold') format('svg');
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Semibold.woff') format('woff'),
+        url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Semibold.svg#open_sansbold') format('svg');
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
@@ -42,6 +52,10 @@ section.wrapper{
     background-color: #EBF0F0;
     min-height: 100%;
 }
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
 header h2{
     font-size: 20px;
     line-height: 24px;
@@ -51,7 +65,6 @@ header h2{
 .block-white{
     border-radius: 6px;
     background-color: #FFFFFF;
-    border:1px solid #EBF0F0;
     box-shadow: 0px 1px 3px 0 rgba(28, 39, 51, 0.2);
 }
 header{
@@ -80,22 +93,22 @@ header .logo span{
 }
 ul.menu-list{
     list-style: none;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 ul.menu-list.first-menu{
-    padding-left: 40px;
+    padding-left: 50px;
 }
 ul.menu-list.last-menu{
-    padding-right: 40px;
+    padding-right: 50px;
 }
 ul.menu-list li{
-    padding: 15px 0;
+    padding: 25px 0;
 }
 ul.menu-list li a span.icon-sanatate{
     margin-right: 15px;
     margin-top: 0;
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     border: medium none;
     display: inline-block;
     vertical-align: top;
@@ -108,42 +121,42 @@ ul.menu-list li a span.icon-sanatate{
     transition: all 300ms ease-out;
 }
 ul.menu-list li a span.icon-sanatate.medici{
-    background-position: 0 -165px;
+    background-position: 0 -210px;
 }
 ul.menu-list li a span.icon-sanatate.spitale{
-    background-position: 0 -330px;
+    background-position: 0 -420px;
 }
 ul.menu-list li a span.icon-sanatate.sanoTeca{
-    background-position: 0 -495px;
+    background-position: 0 -630px;
 }
 ul.menu-list li a span.icon-sanatate.tv{
-    background-position: 0 -55px;
+    background-position: 0 -70px;
 }
 ul.menu-list li a span.icon-sanatate.institutii{
-    background-position: 0 -220px;
+    background-position: 0 -280px;
 }
 ul.menu-list li a span.icon-sanatate.turbeculoza{
-    background-position: 0 -385px;
+    background-position: 0 -490px;
 }
 ul.menu-list li a span.icon-sanatate.scoala{
-    background-position: 0 -550px;
+    background-position: 0 -560px;
 }
 ul.menu-list li a span.icon-sanatate.club{
-    background-position: 0 -110px;
+    background-position: 0 -140px;
 }
 ul.menu-list li a span.icon-sanatate.pacienti{
-    background-position: 0 -275px;
+    background-position: 0 -350px;
 }
 ul.menu-list li a span.icon-sanatate.singe{
-    background-position: 0 -440px;
+    background-position: 0 -560px;
 }
 ul.menu-list li a span.icon-sanatate.pas{
-    background-position: 0 -605px;
+    background-position: 0 -700px;
 }
 ul.menu-list li a span.text{
     display: inline-block;
     line-height: 100%;
-    max-width: 75%;
+    max-width: 70%;
     vertical-align: middle;
     white-space: normal;
 }
@@ -153,6 +166,7 @@ ul.menu-list li a span.text span.title{
     width: 100%;
     color: #000000;
     line-height: 22px;
+    font-weight: 600;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
@@ -191,20 +205,40 @@ ul.menu-list li a:hover span.text span.perex{
     ul.menu-list.last-menu{
         padding-right: 0px;
     }
-}
-@media (max-width: 400px) { 
+    header, header h2{
+        text-align: center;
+    }
     header .logo{
         font-size: 20px;
     }
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    ul.menu-list li a span.text{
-        max-width: 68%;
+    .block-white{
+        margin-bottom: 30px;
     }
 }
-
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
+@media (max-width: 1200px) { 
+    ul.menu-list li a span.text{
+        max-width: 61%;
+    }
 }
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    ul.menu-list.first-menu{
+        padding-left: 0px;
+    }
+    ul.menu-list.last-menu{
+        padding-right: 00px;
+    }
+    ul.menu-list li a span.text{
+        max-width: 56%;
+    }
+}
+@media (max-width: 420px) { 
+    ul.menu-list li a span.text{
+        max-width: 60%;
+    }
+    
+}
+
+
+
