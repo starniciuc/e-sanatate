@@ -1,0 +1,210 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/****************************
+Import Open Sans font
+****************************/
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans_regular/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+        url('../fonts/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('../fonts/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans_bold/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/opensans_bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans_bold/OpenSans-Bold-webfont.woff') format('woff'),
+        url('../fonts/opensans_bold/OpenSans-Bold-webfont.ttf') format('truetype'),
+        url('../fonts/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CenturyGothicRegular';
+    src: url('../fonts/1105886371.eot');
+    src: url('../fonts/1105886371.eot') format('embedded-opentype'),
+        url('../fonts/1105886371.woff2') format('woff2'),
+        url('../fonts/1105886371.woff') format('woff'),
+        url('../fonts/1105886371.ttf') format('truetype'),
+        url('../fonts/1105886371.svg#CenturyGothicRegular') format('svg');
+}
+
+html,body{
+    height: 100%;
+    font-family: 'Open Sans';
+}
+section.wrapper{
+    background-color: #EBF0F0;
+    min-height: 100%;
+}
+header h2{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'CenturyGothicRegular', Arial, Courier New, Sans-Serif; 
+    color: #1C2733;
+}
+.block-white{
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border:1px solid #EBF0F0;
+    box-shadow: 0px 1px 3px 0 rgba(28, 39, 51, 0.2);
+}
+header{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+header .logo{
+    font-size: 33px;
+    color: #1C2733;
+    font-family: 'Open Sans';
+    display: block;
+}
+header .logo:hover{
+    text-decoration: none;
+}
+header .logo span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/logo-gateway.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 240px auto;
+    margin-right: 10px;
+}
+ul.menu-list{
+    list-style: none;
+    padding: 15px 0;
+}
+ul.menu-list.first-menu{
+    padding-left: 40px;
+}
+ul.menu-list.last-menu{
+    padding-right: 40px;
+}
+ul.menu-list li{
+    padding: 15px 0;
+}
+ul.menu-list li a span.icon-sanatate{
+    margin-right: 15px;
+    margin-top: 0;
+    width: 55px;
+    height: 55px;
+    border: medium none;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("../img/logos-platforms.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+ul.menu-list li a span.icon-sanatate.medici{
+    background-position: 0 -165px;
+}
+ul.menu-list li a span.icon-sanatate.spitale{
+    background-position: 0 -330px;
+}
+ul.menu-list li a span.icon-sanatate.sanoTeca{
+    background-position: 0 -495px;
+}
+ul.menu-list li a span.icon-sanatate.tv{
+    background-position: 0 -55px;
+}
+ul.menu-list li a span.icon-sanatate.institutii{
+    background-position: 0 -220px;
+}
+ul.menu-list li a span.icon-sanatate.turbeculoza{
+    background-position: 0 -385px;
+}
+ul.menu-list li a span.icon-sanatate.scoala{
+    background-position: 0 -550px;
+}
+ul.menu-list li a span.icon-sanatate.club{
+    background-position: 0 -110px;
+}
+ul.menu-list li a span.icon-sanatate.pacienti{
+    background-position: 0 -275px;
+}
+ul.menu-list li a span.icon-sanatate.singe{
+    background-position: 0 -440px;
+}
+ul.menu-list li a span.icon-sanatate.pas{
+    background-position: 0 -605px;
+}
+ul.menu-list li a span.text{
+    display: inline-block;
+    line-height: 100%;
+    max-width: 75%;
+    vertical-align: middle;
+    white-space: normal;
+}
+ul.menu-list li a span.text span.title{
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    color: #000000;
+    line-height: 22px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+ul.menu-list li a span.text span.perex{
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    width: 100%;
+    color: #999999;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+ul.menu-list li a:hover{
+    text-decoration: none;
+}
+ul.menu-list li a:hover span.icon-sanatate{
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+ul.menu-list li a:hover span.text span.title{
+    color: #FF0000;
+}
+ul.menu-list li a:hover span.text span.perex{
+    color: #212121;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    ul.menu-list.first-menu{
+        padding-left: 0px;
+    }
+    ul.menu-list.last-menu{
+        padding-right: 0px;
+    }
+}
+@media (max-width: 400px) { 
+    header .logo{
+        font-size: 20px;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    ul.menu-list li a span.text{
+        max-width: 68%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
