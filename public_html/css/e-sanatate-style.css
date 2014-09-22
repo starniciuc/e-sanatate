@@ -1,6 +1,3 @@
-/****************************
- Import fonts
-****************************/
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.eot');
@@ -88,7 +85,7 @@ header .logo span{
     background-size: 240px auto;
     margin-right: 10px;
 }
-.block-white a span.icon-sanatate{
+.block-white a span.icon{
     margin-right: 15px;
     margin-top: 0;
     width: 70px;
@@ -104,37 +101,37 @@ header .logo span{
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
 }
-.block-white a span.icon-sanatate.medici{
+.block-white a span.icon.icon-e-sanatate-medici{
     background-position: 0 -210px;
 }
-.block-white a span.icon-sanatate.spitale{
+.block-white a span.icon.icon-spitale-md{
     background-position: 0 -420px;
 }
-.block-white a span.icon-sanatate.sanoTeca{
+.block-white a span.icon.icon-sanoteca{
     background-position: 0 -630px;
 }
-.block-white a span.icon-sanatate.tv{
+.block-white a span.icon.icon-sanatate-tv{
     background-position: 0 -70px;
 }
-.block-white a span.icon-sanatate.institutii{
+.block-white a span.icon.icon-e-sanatate-institutii-medicale{
     background-position: 0 -280px;
 }
-.block-white a span.icon-sanatate.turbeculoza{
+.block-white a span.icon.icon-tuberculoza-info{
     background-position: 0 -490px;
 }
-.block-white a span.icon-sanatate.scoala{
+.block-white a span.icon.icon-scoala-e-sanatate{
     background-position: 0 -700px;
 }
-.block-white a span.icon-sanatate.club{
+.block-white a span.icon.icon-sanoclub{
     background-position: 0 -140px;
 }
-.block-white a span.icon-sanatate.pacienti{
+.block-white a span.icon.icon-e-sanatate-pacienti{
     background-position: 0 -350px;
 }
-.block-white a span.icon-sanatate.singe{
+.block-white a span.icon.icon-donez-sange{
     background-position: 0 -560px;
 }
-.block-white a span.icon-sanatate.pas{
+.block-white a span.icon.icon-centrul-pas{
     background-position: 0 -770px;
 }
 .block-white a span.text{
@@ -205,11 +202,9 @@ header .logo span{
         padding: 20px;
         margin-bottom: 30px;
     }
-    
 }
 @media (max-width: 420px) { 
     .block-white a span.text{
         max-width: 60%;
     }
-    
 }
