@@ -168,7 +168,7 @@ header .logo span{
 .block-white a:hover{
     text-decoration: none;
 }
-.block-white a:hover span.icon-sanatate{
+.block-white a:hover span.icon{
     margin-top: -5px;
     margin-bottom: 5px;
 }
