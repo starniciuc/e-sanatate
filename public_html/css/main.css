@@ -1,8 +1,5 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 /****************************
-Import Open Sans font
+ Import fonts
 ****************************/
 @font-face {
     font-family: 'Open Sans';
@@ -36,14 +33,13 @@ Import Open Sans font
 }
 @font-face {
     font-family: 'CenturyGothicRegular';
-    src: url('../fonts/1105886371.eot');
-    src: url('../fonts/1105886371.eot') format('embedded-opentype'),
-        url('../fonts/1105886371.woff2') format('woff2'),
-        url('../fonts/1105886371.woff') format('woff'),
-        url('../fonts/1105886371.ttf') format('truetype'),
-        url('../fonts/1105886371.svg#CenturyGothicRegular') format('svg');
+    src: url('../fonts/CenturyGothicRegular.eot');
+    src: url('../fonts/CenturyGothicRegular.eot') format('embedded-opentype'),
+        url('../fonts/CenturyGothicRegular.woff2') format('woff2'),
+        url('../fonts/CenturyGothicRegular.woff') format('woff'),
+        url('../fonts/CenturyGothicRegular.ttf') format('truetype'),
+        url('../fonts/CenturyGothicRegular.svg#CenturyGothicRegular') format('svg');
 }
-
 html,body{
     height: 100%;
     font-family: 'Open Sans';
@@ -185,14 +181,11 @@ header .logo span{
 .block-white a:hover span.text span.perex{
     color: #212121;
 }
-
-/* Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) { 
     .block-white a span.text{
         max-width: 61%;
     }
 }
-/* Medium devices (desktops, 992px and up) */
 @media (max-width: 992px) {
     .block-white a span.text{
         max-width: 56%;
@@ -201,7 +194,6 @@ header .logo span{
         padding: 25px;
     }
 }
-/* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
     header, header h2{
         text-align: center;
@@ -221,6 +213,3 @@ header .logo span{
     }
     
 }
-
-
-
